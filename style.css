@@ -287,6 +287,15 @@ img {
   box-shadow: var(--shadow-lg);
 }
 
+.service-card--primary {
+  border-top: 4px solid var(--primary);
+  background: linear-gradient(180deg, rgba(27, 42, 74, 0.03) 0%, var(--bg) 100%);
+}
+
+.service-card--primary .service-icon {
+  background: var(--accent);
+}
+
 .service-icon {
   width: 56px;
   height: 56px;
@@ -667,8 +676,8 @@ img {
     font-size: 1.35rem;
   }
 
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .services-grid--4col {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .trust-grid {
@@ -677,6 +686,10 @@ img {
 
   .section-title {
     font-size: 2.25rem;
+  }
+
+  .services-grid--4col {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
